@@ -1,0 +1,60 @@
+:root {
+    --primary: #6C63FF;
+    --secondary: #f0f0f0;
+    --ternaire: #303a52;
+}
+
+* {
+    margin:0;
+	padding:0;
+	height:100%;
+    box-sizing: border-box;
+    background: var(--secondary);
+    font-size: 22px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.gameGrid {
+    width:600px;
+    height:600px;
+    
+	position: absolute;
+	left:0;
+	right:0;
+	top:0;
+    bottom:0;
+    
+	margin:auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.case{
+    height: 170px;
+    width: 170px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.softUI {
+    box-shadow: -2px -2px 8px rgba(255,255,255,1),
+                -2px -2px 12px rgba(255,255,255,0.2),
+                inset 2px 2px 3px rgba(255,255,255,0.05),
+                2px 2px 8px rgba(0,0,0,0.15);
+     /* border-radius: 40px; */
+}
+
+.softUI_active {
+    box-shadow: inset -2px -2px 8px rgba(255,255,255,1),
+                inset -2px -2px 12px rgba(255,255,255,0.2),
+                inset 2px 2px 3px rgba(255,255,255,0.05),
+                inset 2px 2px 8px rgba(0,0,0,0.15);
+     /* border-radius: 40px; */
+}
