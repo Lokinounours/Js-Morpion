@@ -136,7 +136,7 @@ function highLightWin() {
         // console.log(element);
         document.getElementById(element).style.color = "var(--primary)";
         document.getElementById(element).style.fontSize = "2em";
-        // document.getElementById(element).style.fontWeight = "bold";
+        document.getElementById(element).style.fontWeight = "bold";
     });
 }
 
@@ -145,7 +145,6 @@ function highLightEnd() {
         // console.log(element);
         document.getElementById(element).style.color = "black";
         document.getElementById(element).style.fontSize = "22px";
-        // element = 0;
-        // document.getElementById(element).style.fontWeight = "22px";
+        document.getElementById(element).style.fontWeight = "lighter";
     });
 }
