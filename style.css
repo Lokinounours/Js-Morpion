@@ -7,7 +7,7 @@
 * {
     margin:0;
 	padding:0;
-	height:100%;
+	/* height:100%; */
     box-sizing: border-box;
     background: var(--secondary);
     font-size: 22px;
@@ -17,13 +17,7 @@
 .gameGrid {
     width:600px;
     height:600px;
-    
-	position: absolute;
-	left:0;
-	right:0;
-	top:0;
-    bottom:0;
-    
+
 	margin:auto;
 
     display: grid;
@@ -41,6 +35,11 @@
 
     border-radius: 20px;
     cursor: pointer;
+
+    font-weight: lighter;
+    font-size: 22px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: black;
 }
 
 .softUI {
@@ -50,11 +49,45 @@
                 2px 2px 8px rgba(0,0,0,0.15);
      /* border-radius: 40px; */
 }
-
+    
 .softUI_active {
-    box-shadow: inset -2px -2px 8px rgba(255,255,255,1),
-                inset -2px -2px 12px rgba(255,255,255,0.2),
-                inset 2px 2px 3px rgba(255,255,255,0.05),
-                inset 2px 2px 8px rgba(0,0,0,0.15);
-     /* border-radius: 40px; */
+        box-shadow: inset -2px -2px 8px rgba(255,255,255,1),
+                    inset -2px -2px 12px rgba(255,255,255,0.2),
+                    inset 2px 2px 3px rgba(255,255,255,0.05),
+                    inset 2px 2px 8px rgba(0,0,0,0.15);
+                    /* border-radius: 40px; */
+}
+
+.gameInfo {
+    width:400px;
+    height: 100px;
+
+    background-color: var(--primary);
+
+    margin:auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0px 0px 10px var(--ternaire);
+    border-radius: 1em;
+}
+
+.content {
+    background-color: transparent;
+    display: flex;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: transparent;
+    margin: 10px 15px;
+}
+
+input {
+    margin: 10px;
+    cursor: pointer;
 }
